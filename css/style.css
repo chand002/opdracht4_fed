@@ -1,0 +1,1007 @@
+body{
+    margin: 0;
+}
+
+h1, h2, h3, h4, a, fieldset, label{
+    font-family: Lato, sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+p{
+    font-family: Merriweather, serif;
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.6em;
+}
+
+.related p{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+dt{
+    margin-top: 1em;
+    margin-left: 2.5em;
+    font-weight: 700;
+}
+
+.related h4{
+    margin-left: 2em;
+}
+
+
+
+
+/*   algemeen formulier css styling*/
+
+main form{
+        border: 1px solid black;
+        border-radius: 2em 0 2em 0;
+        box-shadow: 2px 3px grey;
+        margin-right: 2em;
+    }
+
+textarea{
+    display: block;
+
+}
+
+form em{
+    font-size: 0.8em;
+    color: red;
+}
+
+form > fieldset label{
+    margin-bottom: 0.5em;
+}
+
+    fieldset{
+        display: flex;
+        margin: 1em 1em;
+        border: none;
+    }
+
+    fieldset > legend{
+        font-weight: 700;
+    }
+
+
+/*form css alleen*/
+
+/*mobile screen */
+@media screen and (max-width: 568px) {
+
+    main{
+        margin: 0 1.8em 0 1.8em;
+    }
+
+    h1{
+        font-size: 2em;
+}
+    h2{
+        font-size: 1.4em;
+        padding-bottom: 0.4em;
+    }
+
+    h3{
+        font-size: 1.2em;
+        padding-bottom: 0.4em;
+    }
+
+    p{
+        font-size: 1.1em;
+        line-height: 1.8em;
+    }
+
+    .highlight{
+        background: #F0F1F2;
+        padding: 0.4em 0.7em;
+    }
+
+/*mobile header*/
+    header{
+        background: #ffcc00;
+    }
+
+    .hTitle{
+        display: none;
+    }
+
+    .logo{
+        height: auto;
+        padding-top: 1em;
+        margin-left: 5em;
+        width: 60%;
+        transition: 5s;
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+
+    header > nav > ul{
+        margin-left: 0;
+        padding-left: 0;
+
+    }
+
+    nav a{
+        color: white;
+        font-family: Lato, sans-serif;
+        font-size: 1.6em;
+        text-decoration: none;
+    }
+
+    nav li{
+        list-style-type: none;
+    }
+
+    nav ul li{
+        background: rgba(0,0,0,0.3);
+        border-bottom: 3px solid white;
+        padding-bottom: 0.5em;
+    }
+
+    header nav ul li a{
+        padding-left: 1em;
+    }
+
+    header nav ul li a:active{
+        color: black;
+    }
+
+    form{
+        margin-left: 1em;
+        margin-right: auto;
+    }
+
+    form label{
+        font-family: Lato, sans-serif;
+    }
+
+    form > label > input{
+        font-family: Lato, sans-serif;
+        border-radius: 2em 2em 2em 2em;
+        width: 60%;
+    }
+
+    form button{
+        border-radius: 2em 2em 2em 2em;
+    }
+
+
+    .to-profile{
+        padding: 1.2em 0 1.2em 1em;
+    }
+
+    .to-profile a{
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+    }
+
+    .to-profile a:active{
+        color: black;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+    }
+
+    article header{
+        background: none;
+    }
+
+    .pageHeader{
+        border-bottom: 1px solid black;
+        padding-bottom: 0.5em;
+    }
+
+
+    h4 + img{
+        height: auto;
+        width: 100%;
+    }
+
+    .related{
+        background: #D9D0D0;
+        margin: 1em 2em;
+        padding-bottom: 1.3em;
+    }
+
+    .related > h2{
+        padding: 1em 0 0 1em;
+        font-size: 1.6em;
+    }
+
+    article > header > h3{
+        padding: 0 1.5em;
+        font-size: 1.5em;
+    }
+
+    .meta{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 2em;
+    }
+
+/*    read more css*/
+/*    source:http://codepen.io/Idered/pen/AeBgF*/
+
+    .read-more-state {
+        display: none;
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .read-more-state:checked ~ .read-more-wrap .read-more-target {
+      opacity: 1;
+      font-size: inherit;
+      max-height: 999em;
+    }
+
+    .read-more-state ~ .read-more-trigger:before {
+      content: 'Lees Meer';
+    }
+
+    .read-more-state:checked ~ .read-more-trigger:before {
+      content: 'Lees Minder';
+    }
+
+    .read-more-trigger {
+        cursor: pointer;
+        /*    flexbox usage*/
+        display: flex;
+        justify-content: center;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid black;
+        border-radius: .25em;
+        width: 30%;
+    }
+
+/*    attr selector*/
+    label[for]{
+        margin-left: 2.2em;
+    }
+
+
+/*    end of read more css*/
+
+
+    aside{
+        margin: 1em 1em;
+        padding: 0.5em 0.9em;
+        border: 1px solid black;
+        border-radius: 2em 2em 2em 2em;
+        box-shadow: 1px 2px 1px #BBB4C4;
+    }
+
+    aside > section > article{
+        border-bottom: 1px solid black;
+    }
+
+    .noborder{
+        border-bottom: none;
+    }
+
+    aside > section > article > footer{
+        background: #F0F1F2;
+    }
+
+    .bottom-footer{
+        background: #ffcc00;
+        margin-bottom: 0;
+        padding: 1.5em;
+        color: white;
+    }
+
+    .bottom-footer h2{
+        margin-top: 1em;
+    }
+
+    .bottom-footer > section p{
+        color: white;
+        font-size: 0.9em;
+    }
+
+    .bottom-footer > section h2{
+        color: white;
+    }
+
+    #contact p{
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+
+/*attr selector*/
+    input[name="q"]{
+        border-radius: 2em 2em 2em 2em;
+        width: 70%;
+    }
+
+    #feedback {
+        display: flex;
+        padding: 0.6em;
+        border-radius: 2em 2em 2em 2em;
+        justify-content: center;
+        text-align: center;
+        background: red;
+    }
+
+    #feedback a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #feedback:active {
+        border-radius: 2em 2em 2em 2em;
+        justify-content: center;
+        text-align: center;
+        background: black;
+    }
+
+    #sitemap a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+/*    submit btn css*/
+    input[value="Aanmelden"]{
+        background: #407AFF;
+        font-family: Lato, sans-serif;
+        font-size: 1em;
+        color: white;
+        border-radius: 3em 3em 3em 3em;
+        margin: 1em 30%;
+        width: 35%;
+    }
+
+
+}
+
+/*tablet screen*/
+@media screen
+    and (max-width: 1080px)
+    and (min-width: 568px)
+{
+    .body-wrap{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    main p{
+        line-height: 1.6em;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 1em;
+    }
+
+    header{
+        background: #ffcc00;
+        border-radius: 2em 2em 0 0;
+        margin-top: 0.5em;
+    }
+
+    .hTitle{
+        color: white;
+        float: left;
+        width: 55%;
+        padding-left: 2em;
+        text-shadow: -2px 5px 5px rgba(0,0,0,0.7);
+    }
+
+    .logo{
+        float: right;
+        padding: 2em 2em;
+        height: auto;
+        width: 25%;
+    }
+
+/*    flexbox*/
+    header > nav > ul{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+    }
+
+    header > nav > ul > li{
+        list-style-type: none;
+    }
+
+    nav > ul > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+    }
+
+    .formProfile{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .to-profile{
+        padding-left: 1em;
+        padding-right: 2em;
+    }
+
+    .to-profile > a{
+        color: white;
+        font-size: 0.9em;
+    }
+
+
+    main, .related{
+        float: left;
+        width: 65%;
+    }
+
+    article > header{
+        background: none;
+    }
+
+    .pageHeader{
+        margin: 1em 1em 0.5em 1em;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid black;
+        font-size: 1.8em;
+    }
+
+    h2{
+        margin-left: 1.3em;
+        padding-bottom: 0.5em;
+    }
+
+    h3{
+        padding-left: 1.7em;
+        padding-bottom: 0.5em;
+    }
+
+    h4{
+        padding-left: 2em;
+    }
+
+    .highlight{
+        background: #F0F1F2;
+        padding: 1.3em 1em;
+    }
+
+    h4 + img{
+        margin-left: 4em;
+        width: 80%;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        margin: 1em 1em;
+        padding: 0.5em 0.9em;
+        border: 1px solid black;
+        border-radius: 2em 2em 2em 2em;
+        box-shadow: 1px 2px 1px #BBB4C4;
+    }
+
+    aside > section > article{
+        border-bottom: 1px solid black;
+    }
+
+    .noborder{
+        border-bottom: none;
+    }
+
+    aside p{
+        line-height: 1.3em;
+    }
+
+    aside > section > article > footer{
+        background: #F0F1F2;
+    }
+
+    .meta{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 2em;
+    }
+
+    /*    read more css*/
+/*    source:http://codepen.io/Idered/pen/AeBgF*/
+
+    .read-more-state {
+        display: none;
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+    }
+
+    .read-more-state:checked ~ .read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .read-more-state ~ .read-more-trigger:before {
+      content: 'Lees Meer';
+    }
+
+    .read-more-state:checked ~ .read-more-trigger:before {
+      content: 'Lees Minder';
+    }
+
+    .read-more-trigger {
+        cursor: pointer;
+        /*    flexbox usage*/
+        display: flex;
+        justify-content: center;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid black;
+        border-radius: .25em;
+        width: 30%;
+    }
+
+/*    attr selector, button positioning*/
+    label[for]{
+        margin-top: 0.8em;
+        margin-left: 4em;
+    }
+
+    .related{
+        margin-top: 1em;
+        background: #D9D0D0;
+        padding-bottom: 2em;
+        margin-bottom: 1em;
+    }
+
+    .bottom-footer{
+        background: #ffcc00;
+        clear: left;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 1em 1em 0 1em;
+    }
+
+    #search h2{
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #search{
+        padding-left: 0;
+        margin-left: 0;
+        width: 35%;
+    }
+
+    input[name="q"]{
+        border-radius: 2em 2em 2em 2em;
+    }
+
+    .bottom-footer a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #sitemap > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #sitemap > li ul{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    #sitemap a{
+        font-size: 0.8em;
+    }
+
+    #contact > p{
+        padding: 0 1em;
+        margin: 0 1em;
+        color: white;
+    }
+
+    #contact{
+        width: 40%;
+    }
+
+
+    #about{
+        padding: 0 1em;
+        margin: 0 1em;
+        width: 45%;
+    }
+
+    #about h2{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    #feedback {
+        display: flex;
+        padding: 0.6em;
+        border-radius: 2em 2em 2em 2em;
+        justify-content: center;
+        background: red;
+        width: 35%;
+        margin-left: 2em;
+    }
+
+    #credits{
+        padding: 0 1em;
+        margin: 0 1em;
+        width: 35%;
+    }
+
+    #credits p{
+        padding-left: 2em;
+    }
+
+    .footer-wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+/*    submit btn css*/
+    input[value="Aanmelden"]{
+        background: #407AFF;
+        font-family: Lato, sans-serif;
+        font-size: 1em;
+        color: white;
+        border-radius: 3em 3em 3em 3em;
+        margin: 1em 30%;
+        width: 35%;
+    }
+
+}
+
+/*desktop screen*/
+@media screen
+    and (min-width: 1080px){
+
+        .body-wrap{
+            margin: 0 5em;
+        }
+
+        header{
+            background: #ffcc00;
+            border-radius: 2em 2em 0 0;
+        }
+
+        .hTitle{
+            padding-top: 1em;
+            padding-left: 2em;
+            float: left;
+            width: 40%;
+            color: white;
+            font-size: 1.5em;
+            text-shadow: -2px 5px 5px rgba(0,0,0,0.7);
+        }
+
+        .logo{
+            float: right;
+            padding-right: 2em;
+            padding-top: 2em;
+            width: 40%;
+        }
+
+        nav > ul{
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+            margin: 0 2em;
+            clear: both;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 1em;
+            padding-bottom: 1em;
+
+        }
+
+        nav > ul > li{
+            list-style-type: none;
+        }
+
+        nav > ul > li > a{
+            color: white;
+            font-size: 1.3em;
+            text-decoration: none;
+            transition: 2s;
+        }
+
+        nav > ul > li > a:hover{
+            font-size: 1.6em;
+            transform: rotate(360deg);
+            transition: 3s;
+        }
+
+        .formProfile{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-top: 1em;
+            padding-right: 2em;
+        }
+
+        .to-profile{
+            padding-left: 2em;
+        }
+
+        .to-profile a{
+            color: white;
+        }
+
+
+
+        article header{
+            background: none;
+    }
+
+        .pageHeader{
+            border-bottom: 1px solid black;
+            padding-bottom: 0.5em;
+    }
+
+        main, .related{
+            float: left;
+            width: 65%;
+            margin: 0.5em 2em;
+    }
+        .highlight{
+            background: #F0F1F2;
+            padding: 0.8em 1.1em;
+    }
+
+        aside{
+            display: flex;
+            flex-direction: column;
+            margin: 1em 1em;
+            padding: 0.5em 0.9em;
+            border: 1px solid black;
+            border-radius: 2em 2em 2em 2em;
+            box-shadow: 1px 2px 1px #BBB4C4;
+    }
+
+    aside > section > article{
+        border-bottom: 1px solid black;
+    }
+
+    .noborder{
+        border-bottom: none;
+    }
+
+    aside p{
+        line-height: 1.3em;
+    }
+
+    aside > section > article > footer{
+        background: #F0F1F2;
+    }
+
+        /*    read more css*/
+/*    source:http://codepen.io/Idered/pen/AeBgF*/
+
+    .read-more-state {
+        display: none;
+    }
+
+    .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .read-more-state:checked ~ .read-more-wrap .read-more-target {
+      opacity: 1;
+      font-size: inherit;
+      max-height: 999em;
+    }
+
+    .read-more-state ~ .read-more-trigger:before {
+      content: 'Lees Meer';
+    }
+
+    .read-more-state:checked ~ .read-more-trigger:before {
+      content: 'Lees Minder';
+    }
+
+    .read-more-trigger {
+        cursor: pointer;
+        /*    flexbox usage*/
+        display: flex;
+        justify-content: center;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid black;
+        border-radius: .25em;
+        width: 30%;
+    }
+
+/*    attr selector*/
+        label[for]{
+            margin-left: 2.2em;
+    }
+
+        .meta{
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0 2em;
+    }
+
+         .related{
+            background: #D9D0D0;
+            padding-bottom: 2em;
+            margin-bottom: 1em;
+    }
+
+        .related h3{
+            margin-left: 1.7em;
+        }
+
+        .related h2{
+            margin-left: 1.3em;
+        }
+
+    .bottom-footer{
+        background: #ffcc00;
+        clear: left;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 1em 1em 0 1em;
+    }
+
+    #search h2{
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+    #search{
+        padding-left: 0;
+        margin-left: 0;
+        width: 35%;
+    }
+
+    input[name="q"]{
+        border-radius: 2em 2em 2em 2em;
+    }
+
+    .bottom-footer a{
+        color: white;
+        text-decoration: none;
+    }
+
+    #sitemap > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #sitemap > li ul{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    #sitemap a{
+        font-size: 0.8em;
+    }
+
+    #contact > p{
+        padding: 0 1em;
+        margin: 0 1em;
+        color: white;
+    }
+
+    #contact{
+        width: 20%;
+    }
+
+
+    #about{
+        padding: 0 1em;
+        margin: 0 1em;
+        width: 20%;
+    }
+
+    #about h2{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    #feedback {
+        display: flex;
+        padding: 0.6em;
+        border-radius: 2em 2em 2em 2em;
+        justify-content: center;
+        background: red;
+        width: 20%;
+        margin-left: 2em;
+    }
+
+    #credits{
+        padding: 0 1em;
+        margin: 0 1em;
+        width: 20%;
+    }
+
+    #credits p{
+        padding-left: 2em;
+    }
+
+    .footer-wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+        /*desktop form css*/
+
+
+/*        submit button css*/
+        input[value="Aanmelden"]{
+            background: #E8820C;
+            font-family: Lato, sans-serif;
+            font-size: 1.5em;
+            color: white;
+            border-radius: 80% 20% 80% 20%;
+            margin: 1em 30%;
+            width: 35%;
+            height: 200px;
+            transition: 2s ease;
+    }
+
+        input[value="Aanmelden"]:hover{
+            background: #0D7BFF;
+            font-family: Merriweather, serif;
+            font-size: 2em;
+            color: white;
+            border-radius: 20% 80% 20% 80%;
+            margin: 1em 30%;
+            width: 35%;
+            height: 200px;
+            transition: 1.2s ease;
+    }
+
+
+}
+
+
+
+
+
