@@ -1,42 +1,42 @@
-body{
+    body{
     margin: 0;
 }
 
-h1, h2, h3, h4, a, fieldset, label{
+    h1, h2, h3, h4, a, fieldset, label{
     font-family: Lato, sans-serif;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-p{
+    p{
     font-family: Merriweather, serif;
     margin-top: 0;
     padding-top: 0;
     line-height: 1.6em;
 }
 
-main section > p:nth-child(3){
+    main section > p:nth-child(3){
     background: #F0F1F2;
     padding: 0.8em 1.1em;
 }
 
-main section > p:nth-child(5){
+    main section > p:nth-child(5){
     background: #F0F1F2;
     padding: 0.8em 1.1em;
 }
 
-.related p{
+    .related p{
     margin-left: 2em;
     margin-right: 2em;
 }
 
-dt{
+    dt{
     margin-top: 1em;
     margin-left: 2.5em;
     font-weight: 700;
 }
 
-.related h4{
+    .related h4{
     margin-left: 2em;
 }
 
@@ -45,24 +45,24 @@ dt{
 
 /*   algemeen formulier css styling*/
 
-main form{
+    main form{
         border: 1px solid black;
         border-radius: 2em 0 2em 0;
         box-shadow: 2px 3px grey;
         margin-right: 2em;
     }
 
-textarea{
+    textarea{
     display: block;
 
 }
 
-form em{
+    form em{
     font-size: 0.8em;
     color: red;
 }
 
-form > fieldset label{
+    form > fieldset label{
     margin-bottom: 0.5em;
 }
 
@@ -77,13 +77,12 @@ form > fieldset label{
         font-size: 1.5em;
     }
 
-label > input:focus, textarea:focus{
-    background: #999751;
-    height: 50px;
+    label > input:focus, textarea:focus{
+    background: grey;
+    border: 2px solid black;
     color: white;
-    width: 200px;
     transition: 2s;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: inherit;
 
 }
@@ -173,19 +172,23 @@ label > input:focus, textarea:focus{
         margin-right: auto;
     }
 
-    form label{
+    main form label{
         font-family: Lato, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     form > label > input{
         font-family: Lato, sans-serif;
         border-radius: 2em 2em 2em 2em;
-        width: 60%;
     }
 
     form button{
         border-radius: 2em 2em 2em 2em;
     }
+
+
 
 
     .to-profile{
@@ -379,11 +382,12 @@ label > input:focus, textarea:focus{
     input[value="Aanmelden"]{
         background: #407AFF;
         font-family: Lato, sans-serif;
-        font-size: 1em;
+        font-size: 1.5em;
         color: white;
         border-radius: 3em 3em 3em 3em;
-        margin: 1em 30%;
-        width: 35%;
+        padding: 1em;
+        width: auto;
+        margin: 1em 5em;
     }
 
 
@@ -690,11 +694,12 @@ label > input:focus, textarea:focus{
     input[value="Aanmelden"]{
         background: #407AFF;
         font-family: Lato, sans-serif;
-        font-size: 1em;
+        font-size: 1.5em;
         color: white;
         border-radius: 3em 3em 3em 3em;
-        margin: 1em 30%;
-        width: 35%;
+        padding: 1em;
+        width: auto;
+        margin: 1em 35%;
     }
 
 }
