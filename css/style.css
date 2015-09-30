@@ -15,6 +15,16 @@ p{
     line-height: 1.6em;
 }
 
+main section > p:nth-child(3){
+    background: #F0F1F2;
+    padding: 0.8em 1.1em;
+}
+
+main section > p:nth-child(5){
+    background: #F0F1F2;
+    padding: 0.8em 1.1em;
+}
+
 .related p{
     margin-left: 2em;
     margin-right: 2em;
@@ -64,7 +74,21 @@ form > fieldset label{
 
     fieldset > legend{
         font-weight: 700;
+        font-size: 1.5em;
     }
+
+label > input:focus, textarea:focus{
+    background: #999751;
+    height: 50px;
+    color: white;
+    width: 200px;
+    transition: 2s;
+    font-size: 2em;
+    font-family: inherit;
+
+}
+
+
 
 
 /*form css alleen*/
@@ -92,11 +116,6 @@ form > fieldset label{
     p{
         font-size: 1.1em;
         line-height: 1.8em;
-    }
-
-    .highlight{
-        background: #F0F1F2;
-        padding: 0.4em 0.7em;
     }
 
 /*mobile header*/
@@ -479,10 +498,6 @@ form > fieldset label{
         padding-left: 2em;
     }
 
-    .highlight{
-        background: #F0F1F2;
-        padding: 1.3em 1em;
-    }
 
     h4 + img{
         margin-left: 4em;
@@ -595,7 +610,7 @@ form > fieldset label{
     #search{
         padding-left: 0;
         margin-left: 0;
-        width: 35%;
+        width: 10%;
     }
 
     input[name="q"]{
@@ -769,16 +784,13 @@ form > fieldset label{
         .pageHeader{
             border-bottom: 1px solid black;
             padding-bottom: 0.5em;
+            font-size: 2em;
     }
 
         main, .related{
             float: left;
             width: 65%;
             margin: 0.5em 2em;
-    }
-        .highlight{
-            background: #F0F1F2;
-            padding: 0.8em 1.1em;
     }
 
         aside{
@@ -880,7 +892,7 @@ form > fieldset label{
         background: #ffcc00;
         clear: left;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         color: white;
         padding: 1em 1em 0 1em;
     }
@@ -894,14 +906,14 @@ form > fieldset label{
     #search{
         padding-left: 0;
         margin-left: 0;
-        width: 35%;
+        width: 15%;
     }
 
     input[name="q"]{
         border-radius: 2em 2em 2em 2em;
     }
 
-    .bottom-footer a{
+    bottom-footer a{
         color: white;
         text-decoration: none;
     }
@@ -919,6 +931,8 @@ form > fieldset label{
 
     #sitemap a{
         font-size: 0.8em;
+        color: white;
+        text-decoration: none;
     }
 
     #contact > p{
@@ -949,8 +963,14 @@ form > fieldset label{
         border-radius: 2em 2em 2em 2em;
         justify-content: center;
         background: red;
+        color: white;
         width: 20%;
         margin-left: 2em;
+    }
+
+    #feedback a{
+        color: white;
+        text-decoration: none;
     }
 
     #credits{
@@ -997,6 +1017,8 @@ form > fieldset label{
             height: 200px;
             transition: 1.2s ease;
     }
+
+
 
 
 }
